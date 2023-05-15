@@ -1,10 +1,11 @@
-package dev.joaquim.fake_twitter.service;
+package dev.joaquim.fake_twitter.services;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import dev.joaquim.fake_twitter.entity.Post;
-import dev.joaquim.fake_twitter.repository.PostRepository;
+
+import dev.joaquim.fake_twitter.entities.Post;
+import dev.joaquim.fake_twitter.repositories.PostRepository;
 
 @Service
 public class PostService {

@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import dev.joaquim.fake_twitter.entity.Post;
-import dev.joaquim.fake_twitter.service.PostService;
+import dev.joaquim.fake_twitter.entities.Post;
+import dev.joaquim.fake_twitter.services.PostService;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/posts")
@@ -26,7 +27,7 @@ public class PostController {
   }
 
   @PostMapping()
-  public ResponseEntity<Post> create(@RequestBody() Post post) {
+  public ResponseEntity<Post> create(@Valid @RequestBody Post post) {
     Post result = service.createPost(post);
     if(result != null) {
       return new ResponseEntity<>(result, HttpStatus.OK);
