@@ -1,5 +1,0 @@
-dev/joaquim/fake_twitter/entity/Post.class
-dev/joaquim/fake_twitter/controllers/PostController.class
-dev/joaquim/fake_twitter/service/PostService.class
-dev/joaquim/fake_twitter/repository/PostRepository.class
-dev/joaquim/fake_twitter/FakeTwitterApplication.class
