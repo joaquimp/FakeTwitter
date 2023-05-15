@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import dev.joaquim.fake_twitter.entities.Post;
+import dev.joaquim.fake_twitter.entities.PostDTO;
 import dev.joaquim.fake_twitter.services.PostService;
 import jakarta.validation.Valid;
 
@@ -27,8 +28,8 @@ public class PostController {
   }
 
   @PostMapping()
-  public ResponseEntity<Post> create(@Valid @RequestBody Post post) {
-    Post result = service.createPost(post);
+  public ResponseEntity<Post> create(@Valid @RequestBody PostDTO postDTO) {
+    Post result = service.createPost(postDTO.transformToPost());
     if(result != null) {
       return new ResponseEntity<>(result, HttpStatus.OK);
     }
