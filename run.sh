@@ -1,1 +1,1 @@
-docker run -p 8080:8080 springboot-fake-twitter
+docker run -p 8080:8080 --rm springboot-fake-twitter
