@@ -1,6 +1,7 @@
 /Users/joaquimpessoafilho/git/DevelUp/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/FakeTwitterApplication.java
 /Users/joaquimpessoafilho/git/DevelUp/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/controllers/PostController.java
 /Users/joaquimpessoafilho/git/DevelUp/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/services/PostService.java
+/Users/joaquimpessoafilho/git/DevelUp/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/config/WebConfig.java
 /Users/joaquimpessoafilho/git/DevelUp/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/entities/Post.java
 /Users/joaquimpessoafilho/git/DevelUp/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/controllers/GlobalExceptionHandler.java
 /Users/joaquimpessoafilho/git/DevelUp/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/repositories/PostRepository.java
