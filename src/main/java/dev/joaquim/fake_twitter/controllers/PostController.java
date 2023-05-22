@@ -17,14 +17,25 @@ import org.springframework.web.bind.annotation.RestController;
 import dev.joaquim.fake_twitter.entities.Post;
 import dev.joaquim.fake_twitter.entities.PostDTO;
 import dev.joaquim.fake_twitter.services.PostService;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
+
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 @RestController
 @RequestMapping("/api/posts")
+@Tag(name = "Post", description = "Fake Twitter Post")
 public class PostController {
   @Autowired
   PostService service;
 
+  @ApiResponses({
+    @ApiResponse(responseCode = "200", content = { @Content(schema = @Schema(implementation = Post.class), mediaType = "application/json") }),
+    @ApiResponse(responseCode = "404", content = { @Content(schema = @Schema(implementation = ValidationError.class), mediaType = "application/json") }),
+    @ApiResponse(responseCode = "500", content = { @Content(schema = @Schema()) }) })
   @PostMapping()
   public ResponseEntity<Post> create(@Valid @RequestBody PostDTO postDTO) {
     Post result = service.createPost(postDTO.transformToPost());
