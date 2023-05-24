@@ -1,0 +1,8 @@
+dev/joaquim/fake_twitter/controllers/PostController.class
+dev/joaquim/fake_twitter/entities/PostDTO.class
+dev/joaquim/fake_twitter/FakeTwitterApplication.class
+dev/joaquim/fake_twitter/entities/Post.class
+dev/joaquim/fake_twitter/controllers/ValidationError.class
+dev/joaquim/fake_twitter/services/PostService.class
+dev/joaquim/fake_twitter/controllers/GlobalExceptionHandler.class
+dev/joaquim/fake_twitter/repositories/PostRepository.class
