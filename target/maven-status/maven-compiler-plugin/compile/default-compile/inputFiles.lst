@@ -1,8 +1,8 @@
-/Users/joaquim/git/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/controllers/PostController.java
-/Users/joaquim/git/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/controllers/GlobalExceptionHandler.java
-/Users/joaquim/git/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/FakeTwitterApplication.java
-/Users/joaquim/git/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/config/WebConfig.java
-/Users/joaquim/git/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/repositories/PostRepository.java
-/Users/joaquim/git/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/services/PostService.java
-/Users/joaquim/git/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/entities/PostDTO.java
-/Users/joaquim/git/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/entities/Post.java
+/workspaces/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/config/WebConfig.java
+/workspaces/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/controllers/GlobalExceptionHandler.java
+/workspaces/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/repositories/PostRepository.java
+/workspaces/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/entities/PostDTO.java
+/workspaces/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/entities/Post.java
+/workspaces/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/services/PostService.java
+/workspaces/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/FakeTwitterApplication.java
+/workspaces/FakeTwitter/src/main/java/dev/joaquim/fake_twitter/controllers/PostController.java

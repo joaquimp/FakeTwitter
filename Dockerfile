@@ -1,4 +1,4 @@
-FROM openjdk:20
+FROM openjdk:17
 VOLUME /tmp
 EXPOSE 8080
 ARG JAR_FILE=target/fake_twitter-0.0.1-SNAPSHOT.jar
@@ -8,6 +8,8 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 # FROM eclipse-temurin:17-jdk-focal
 # EXPOSE 8080:80
 # WORKDIR /app
+ 
+
  
 # COPY .mvn/ .mvn
 # COPY mvnw pom.xml ./

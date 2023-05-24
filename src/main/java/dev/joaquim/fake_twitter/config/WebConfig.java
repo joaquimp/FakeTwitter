@@ -4,6 +4,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+// import org.springframework.web.cors.CorsConfigurationSource;
 
 import org.springframework.context.annotation.Bean;
 
@@ -12,6 +13,7 @@ import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 import io.swagger.v3.oas.models.servers.Server;
+
 
 import java.util.List;
 
@@ -23,8 +25,11 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**");
+        registry.addMapping("/**")
+        .allowedMethods("GET", "POST", "PUT", "DELETE");
     }
+
+   
 
     @Bean
     public OpenAPI myOpenAPI() {
